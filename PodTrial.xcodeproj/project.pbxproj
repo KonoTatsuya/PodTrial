@@ -14,6 +14,7 @@
 		47BEA0FC25F79DC800672D43 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BEA0FB25F79DC800672D43 /* ContentView.swift */; };
 		47BEA0FE25F79DC900672D43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47BEA0FD25F79DC900672D43 /* Assets.xcassets */; };
 		47BEA10125F79DC900672D43 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47BEA10025F79DC900672D43 /* Preview Assets.xcassets */; };
+		47BEA10A25F7AB7F00672D43 /* PodTrial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BEA10925F7AB7F00672D43 /* PodTrial.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 		47BEA0FD25F79DC900672D43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		47BEA10025F79DC900672D43 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		47BEA10225F79DC900672D43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47BEA10925F7AB7F00672D43 /* PodTrial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodTrial.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 			children = (
 				47BEA0DA25F79D2F00672D43 /* PodTrial.h */,
 				47BEA0DB25F79D2F00672D43 /* Info.plist */,
+				47BEA10925F7AB7F00672D43 /* PodTrial.swift */,
 			);
 			path = PodTrial;
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 				TargetAttributes = {
 					47BEA0D625F79D2F00672D43 = {
 						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1230;
 					};
 					47BEA0DF25F79D2F00672D43 = {
 						CreatedOnToolsVersion = 12.3;
@@ -263,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47BEA10A25F7AB7F00672D43 /* PodTrial.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +424,7 @@
 		47BEA0EC25F79D2F00672D43 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 288QF3T77S;
@@ -435,6 +441,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = aiforward.PodTrial;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -443,6 +450,7 @@
 		47BEA0ED25F79D2F00672D43 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 288QF3T77S;
@@ -467,6 +475,7 @@
 		47BEA0EF25F79D2F00672D43 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 288QF3T77S;
 				INFOPLIST_FILE = PodTrialTests/Info.plist;
@@ -485,6 +494,7 @@
 		47BEA0F025F79D2F00672D43 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 288QF3T77S;
 				INFOPLIST_FILE = PodTrialTests/Info.plist;
